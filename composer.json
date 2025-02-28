@@ -1,0 +1,35 @@
+{
+  "name": "lyramvc/lyramvc",
+  "description": "Basic Application With PHP MVC",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Lyramvc\\Lyramvc\\": "src/"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"echo 'Running post-root-package-install'; file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php script/script.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "pcraft"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "twig/twig": "^3.20",
+    "vlucas/phpdotenv": "^5.6",
+    "catfan/medoo": "^2.1",
+    "doctrine/dbal": "^4.2",
+    "nikic/fast-route": "^1.3",
+    "fakerphp/faker": "^1.24"
+  }
+}
