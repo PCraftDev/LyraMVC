@@ -1,6 +1,6 @@
 # 📌 Pcraft LyraMVC - Lightweight PHP MVC Framework
 
-Pcraft LyraMVC adalah framework **MVC ringan** berbasis PHP yang dirancang untuk mempermudah pengembangan aplikasi web dengan arsitektur yang bersih dan terorganisir.
+Pcraft LyraMVC adalah framework **MVC ringan** berbasis PHP yang dirancang untuk mempermudah pengembangan aplikasi web dengan arsitektur yang bersih dan terorganisir. Project ini dibuat disaat saya sedang tidak melakukan apa-apa dan dalam kondisi gabutz:V, serta mungkin saja project ini bisa mangkrak seperti project lainnya yang dibuat saat dalam kondisi yang sama ~hehe
 
 ---
 
