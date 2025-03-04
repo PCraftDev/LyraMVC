@@ -78,6 +78,10 @@ Jika ingin mengatur IP dan port secara manual:
 php app run --server=127.0.0.1 --port=8080
 ```
 
+```bash
+php app run --port=8080
+```
+
 ---
 
 ## 🛠 Perintah CLI (`php app`)
