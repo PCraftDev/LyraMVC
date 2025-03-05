@@ -152,7 +152,7 @@ class ExampleController
 Atau gunakan perintah CLI:
 
 ```bash
-php app create:controller UserController
+php app create:controller ExampleController
 ```
 
 Tambahkan route di `src/Core/Router.php`:
