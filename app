@@ -5,7 +5,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Lyramvc\Lyramvc\Core\Server;
 use Lyramvc\Lyramvc\Core\Migration;
-use Lyramvc\Lyramvc\Core\CreateModel;
+use Lyramvc\Lyramvc\Core\CreateModel;  
+use Lyramvc\Lyramvc\Core\CreateController;  
 use Lyramvc\Lyramvc\Core\Database;
 use Lyramvc\Lyramvc\Core\Seeder;
 // Inisialisasi database
@@ -19,6 +20,7 @@ $commands = [
     'migrate'          => 'Menjalankan semua migration yang belum dieksekusi',
     'create:migration' => 'Membuat file migration baru, contoh: php app create:migration users',
     'create:model'     => 'Membuat file model baru, contoh: php app create:model users',
+    'create:controller'     => 'Membuat file controller baru, contoh: php app create:controller UsersController',
     'help'             => 'Menampilkan daftar perintah'
 ];
 
@@ -71,7 +73,16 @@ switch ($command) {
             echo "   php app create:model User\n";
             exit(1);
         }
-        CreateModel::createModel($argv[2]);
+        
+        CreateModel::CreateModel($argv[2]);
+        break;
+    case 'create:controller':
+        if (!isset($argv[2])) {
+            echo "Harap masukkan nama Model. Contoh:\n";
+            echo "   php app create:controller UserController\n";
+            exit(1);
+        }
+        CreateController::CreateController($argv[2]);
         break;
 
     case 'help':
