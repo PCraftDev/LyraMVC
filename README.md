@@ -149,6 +149,12 @@ class ExampleController
 }
 ```
 
+Atau gunakan perintah CLI:
+
+```bash
+php app create:controller UserController
+```
+
 Tambahkan route di `src/Core/Router.php`:
 
 ```php
