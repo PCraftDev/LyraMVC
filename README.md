@@ -52,8 +52,8 @@ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=nama_database
-DB_USERNAME=root
-DB_PASSWORD=
+DB_USERNAME=username_db
+DB_PASSWORD=password_db
 ```
 
 ---
