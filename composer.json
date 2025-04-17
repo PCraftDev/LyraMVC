@@ -1,7 +1,7 @@
 {
   "name": "lyramvc/lyramvc",
   "description": "Basic Application With PHP MVC",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "type": "project",
   "autoload": {
